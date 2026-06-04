@@ -1,0 +1,67 @@
+ *{
+
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+ }
+
+.body{font-size: 12px;}
+
+
+
+:root{
+    --color-primario: rgba(33, 56, 41, 0.788);
+    --color-secundario: rgb(99, 177, 131);
+    --altura-header: 240px;
+    --fuente-titulos:'Lucida Sans';
+    --texto-color-primario:white;
+    --texto-color-secundario:black;
+ }
+
+
+
+header{
+    height: var(--altura-header);
+    background-color: var(--color-primario);
+    color: var(--texto-color-primario);
+    position:relative;
+}
+
+
+.bienvenida{
+    position:absolute;
+    left: 10%;
+    bottom: 35px;
+    background-color: rgb(107, 134, 112);
+    font-family: var(--fuente-titulos);
+    color: var(--texto-color-primario);
+}
+
+.buscador{
+    position:absolute;
+    bottom: -40px;
+    left: 10%;
+    height: 30%;
+    width: 80%;
+
+    background-color:white;
+}
+
+.cuadrado-boton{
+    height:73px;
+    width: 50px;
+    background-color: rgb(39, 80, 39);
+}
+
+.degradado{
+    background: linear-gradient(to bottom, transparent, var(--color-primario), var (var(--color-secundario)));
+}
+
+
+
+
+main{
+    min-height: calc(100dvh - var(--altura-header));
+    background-color: var(--color-secundario);
+}
